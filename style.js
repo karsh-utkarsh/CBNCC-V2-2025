@@ -7,7 +7,7 @@ gsap.to("#para", {
   scrollTrigger: {
     trigger: "#para",
     start: "top 10%",     // animation starts when #para hits top of viewport
-    end: "top 30%", 
+    end: "top 40%", 
        // ends when #para leaves top
     scrub: 2           // links animation to scroll position
   }
@@ -133,60 +133,19 @@ gsap.to("#navbar .logo",{
     duration:1,
     delay:2    
 })
-gsap.to(".card1", {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".card1",
-        start: "top 15%",
-        end: "bottom 15%",
-        
-        scrub: true
-    }
-})
 
-gsap.to(".card2", {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".card2",
-        start: "top 15%",
-        end: "bottom 15%",
-       
-        scrub: true
-    }
-})
 
-gsap.to(".card3", {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".card3",
-        start: "top 25%",
-        end: "bottom 15%",
-      
-        scrub: true
-    }
-})
-gsap.to(".card4", {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".card4",
-        start: "top 15%",
-        end: "bottom 15%",
-        
-        scrub: true
-    }
-})
-gsap.to(".card5", {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".card5",
-        start: "top 15%",
-        end: "bottom 15%",
-        
-        scrub: true
-    }
-})
+gsap.to("#para", {
+  backgroundColor: "#fff",
+  color: "#000",
+
+  scrollTrigger: {
+    trigger: "#president",      // when team section starts
+    start: "top 20%",      // adjust as needed
+    end: "top 100%",
+    scrub: 2,
+   
+    
+    
+  }
+});

@@ -1,0 +1,205 @@
+.team-container {
+  display: flex;        /* puts all children side by side */
+  flex-wrap: nowrap;    /* keep them in one row */
+  gap: 30px;            /* spacing between cards */
+  overflow-x: auto;     /* horizontal scrolling if needed */
+}
+.team-container::-webkit-scrollbar {
+  display: none;
+}
+.team-container > div {
+  width: 20%;           /* card width */
+  height: 180px;        /* fixed height */
+  background-color: aqua;
+  display: flex;        /* optional: align content inside card */
+  align-items: center;
+  justify-content: center;
+ margin-top: 8%;
+  flex-shrink: 0;       /* prevent shrinking */
+}
+
+.team-member img {
+ width: 100%;              /* take full width of div */
+  height: 100%;              /* take most of the div height */
+  object-fit: cover;        /* fill div without stretching */
+  border-radius: 0;  
+}
+
+.team-member img:hover {
+  transform: scale(1.08);                   /* slightly larger zoom */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35); /* softer, more natural shadow */
+  cursor: pointer;
+}
+.team-member h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: black;
+}
+
+#member5 img {
+   object-position: 30% 20%;  /* show the top of the image */
+}
+
+#member6 img {
+   object-position: 30% 20%;  /* show the top of the image */
+}
+
+.cbncc-member-container {
+  display: flex;        /* puts all children side by side */
+  flex-wrap: nowrap;    /* keep them in one row */
+  gap: 30px;            /* spacing between cards */
+  overflow-x: auto;     /* horizontal scrolling if needed */
+}
+.cbncc-member-container::-webkit-scrollbar {
+  display: none;
+}
+.cbncc-member-container > div {
+  width: 20%;           /* card width */
+  height: 50px;        /* fixed height */
+  
+  display: flex;        /* optional: align content inside card */
+  align-items: center;
+  justify-content: center;
+ margin-top: 1%;
+  flex-shrink: 0;  
+     /* prevent shrinking */
+}
+
+
+
+.member-post{
+    text-align: left;
+    font-size: 0.9rem;
+    margin-right: 4%;
+    font-family: 'MyFont3';
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.member-name{
+    text-align: right;
+    font-size: 0.9rem;
+    font-family: 'MyFont3';
+    text-transform: uppercase;
+}
+
+
+#heading1 {
+    position: absolute;
+    top: 54%;             /* distance from top */
+    right: 3%;           /* distance from right edge */
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;  /* stack h1, h2, h3 vertically */
+    align-items: flex-start;   /* align all children to right */
+   
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#heading2 {
+    position: absolute;
+    top: 68%;
+    right: 77%;           /* fixed right distance */
+    width: 20%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   /* align text to right */
+    background-color: aquamarine;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#heading1 h1 {
+    font-size: 3rem;
+    margin-top: 5%;    /* remove default margin */
+    white-space: nowrap;
+     transform: scale(1.0) scaleY(1.3);
+     font-family: 'MyFont5';
+    margin-bottom: 2%;   /* prevent line break */
+}
+
+#heading1 h2
+ {
+    font-size: 0.7rem;
+    margin: 0;
+    white-space: nowrap;
+     font-family: 'MyFont2';
+     margin-top: 5%;
+     margin-left: 40%;
+}
+
+#heading1 h3 {
+    font-size: 1.9rem;
+     white-space: nowrap;
+     font-family: 'MyFont3';
+     margin-top: 3%;
+    
+}
+@media (max-width: 768px) {
+  .team-container > div,
+  .cbncc-member-container > div {
+    width: 40vw;          /* smaller cards */
+    height: 20vh;
+  }
+
+  #heading1 {
+    width: 70%;
+    top: 45%;
+    right: 5%;
+  }
+
+  #heading1 h1 {
+    font-size: 6vw;
+  }
+
+  #heading1 h2 {
+    font-size: 2vw;
+  }
+
+  #heading1 h3 {
+    font-size: 4vw;
+  }
+
+  #heading2 {
+    width: 40%;
+    right: 15%;
+    top: 45%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .team-container > div,
+  .cbncc-member-container > div {
+    width: 60vw;
+    height: 18vh;
+   
+  }
+
+  #heading1 {
+    width: 80%;
+    top: 40%;
+    right: 5%;
+  }
+
+  #heading1 h1 {
+    font-size: 6vw;
+  }
+
+  #heading1 h2 {
+    font-size: 3vw;
+  }
+
+  #heading1 h3 {
+    font-size: 5vw;
+  }
+
+  #heading2 {
+    width: 100%;
+    top: 70%;
+    right: 0%;
+  }
+}
