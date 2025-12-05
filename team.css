@@ -107,10 +107,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;   /* align text to right */
-    background-color: aquamarine;
+   
     padding: 5px;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
+#heading2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain — see below */
+}
+
+#heading2 video {
+  transform: rotate(0deg);
+}
+
 
 #heading1 h1 {
     font-size: 3rem;
