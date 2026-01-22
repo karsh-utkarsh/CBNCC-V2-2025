@@ -44,6 +44,11 @@
    object-position: 30% 20%;  /* show the top of the image */
 }
 
+#member8 img, #member9 img {
+   object-position: 30% 20%;  /* show the top of the image */
+}
+
+
 .cbncc-member-container {
   display: flex;        /* puts all children side by side */
   flex-wrap: nowrap;    /* keep them in one row */

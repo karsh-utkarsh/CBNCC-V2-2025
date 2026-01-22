@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="CBNCC - Code Busters and Coding Club, the official coding club of Netaji Subhas University">
+    <meta name="theme-color" content="#f2f2f2">
+    <title>CBNCC - Code Busters and Coding Club</title>
+    <!-- Preload critical fonts for mobile performance -->
+    <link rel="preload" href="fonts/PPNeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/PPNeueMontreal-Book.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/PPNeueMontreal-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>  
+     <nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="logo" aria-label="CBNCC Logo">CBNCC</div>
+  <ul class="nav-links" role="menubar">
+    <li role="none"><a href="index.html" role="menuitem" aria-label="Home page">Home</a></li>
+    <li role="none"><a href="events.html" role="menuitem" aria-label="Events page">Events</a></li>
+    <li role="none"><a href="#" role="menuitem" aria-label="Projects page">Achievements</a></li>
+    <li role="none"><a href="team.html" role="menuitem" aria-label="Team page">Team</a></li>
+    <li role="none"><a href="faculty.html" role="menuitem" aria-label="Faculty">Faculty</a></li>
+  </ul>
+  <button class="menu-toggle" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+    <span class="bar" aria-hidden="true"></span>
+    <span class="bar" aria-hidden="true"></span>
+    <span class="bar" aria-hidden="true"></span>
+  </button>
+</nav>
+
+
+<div id="faculty-header">
+  <h1>OUR ESTEEMED FACULTY ADVISORS</h1>
+</div>
+
+<div id="container">
+
+<div id="suryasir" class="visible">
+    <img src="/images/surya sir.jpg" alt="Faculty Advisor 1">
+    <h2>Mr. Surya Prakash Rao
+(Faculty) (Department of CS & IT)</h2>
+   
+
+
+</div>
+
+<div id="deepaksir" class="hidden">
+    <img src="/images/deepak sir.jpg" alt="Faculty Advisor 2">
+    <h2>Mr. Deepak Kumar Adhikari
+(Faculty) (Department of CS & IT)</h2>
+
+</div>
+
+
+
+ <button class="arrow-btn" onclick="swapFaculty()">➤</button>
+
+</div>
+
+
+
+
+
+
+
+  
+ <script>
+function swapFaculty() {
+    const surya = document.getElementById("suryasir");
+    const deepak = document.getElementById("deepaksir");
+
+    if (surya.classList.contains("visible")) {
+        surya.classList.remove("visible");
+        surya.classList.add("hidden");
+
+        deepak.classList.remove("hidden");
+        deepak.classList.add("visible");
+    } else {
+        deepak.classList.remove("visible");
+        deepak.classList.add("hidden");
+
+        surya.classList.remove("hidden");
+        surya.classList.add("visible");
+    }
+}
+</script>
+
+</body>
+</html>

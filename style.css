@@ -1012,6 +1012,30 @@ html, body{
 }
 
 
+#induction{
+   width: 580px;
+  height: 390px;
+  background-color: blue;
+  margin-left: 52%;
+  margin-top: -3%;
+   background-image: url(/images/induction.jpeg);
+  background-size: cover;
+  padding-top: 20px;
+  
+}
+#induction1{
+  width: 420px;
+  height: 35px;
+ 
+  margin-left: 52%;
+  margin-top: 8px;
+  font-size: 8px;
+  font-family: "MyFont1";
+  
+
+}
+
+
 #devfest1{
    width: 420px;
   height: 35px;
@@ -1218,6 +1242,8 @@ html, body{
   #hack80n1,
   #devspark1,
   #devfest1,
+  #induction,
+  #induction1,
   #devfest2 {
     font-size: 10px;
     margin-left: 5%;
