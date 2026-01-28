@@ -2433,3 +2433,141 @@ a:hover h1 {
   text-decoration: underline; 
   text-decoration-color: black;/* optional underline on hover */
 }
+@media (min-aspect-ratio: 820 / 1180) and (max-aspect-ratio: 821 / 1180) {
+ #top h1{
+    font-size: 3.5rem;
+    margin-top: 15px;
+    margin-left: 10%;
+  }
+
+  #bottom h1{
+    font-size: 3.5rem;
+    
+    margin-top: 125px;
+    transform: translate(-190px,10px);
+  }
+  #left h2{
+    font-size: 1.3rem;
+    
+    margin-top: 10px;
+      transform: translate(215px,370px );
+  }
+
+  #center{
+    width: 700px;
+    height: 300px;
+   transform: translate(-170px);
+  }
+
+  #section1 h3{
+    font-size: 0.9rem;
+    
+    transform: translate(-90px,462px);
+    
+  }
+
+  #section1 h1,
+ #section1 h2{
+    font-size: 3.5rem;
+ transform: translate(-110px,112px);
+  
+  
+  }
+
+  #driven{
+    margin-left: -77%;
+    margin-top: 560px;
+    
+  }
+
+  #right h2{
+    font-size: 0.9rem;
+    
+    margin-top: -130px;
+    transform: translate(-120px,-20px);
+  }
+  #culture{
+    position:absolute;
+    margin-left: 15%;
+    margin-top: 650px;
+  }
+
+  #heading h1{
+    margin-left: 40%;
+     transform: translate(-10px,-260px);
+  }
+  #heading2 h1{
+  
+     transform: translate(-10px,-210px);
+  }
+  #reasons {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 50px;
+    gap: 25px;
+  }
+
+  #reasons > div {
+    width: 90%;
+    height: auto;
+    padding: 50px 20px;
+    margin-top: 0;
+    border-width: 1.5px;
+    transition: 0.3s ease;
+    gap: 25px;
+  }
+
+  /* Hover: subtle grow effect (no huge expansion on small screens) */
+  #reasons > div:hover {
+    transform: scale(1.03);
+    width: 92%;
+  }
+
+  /* Heading adjustments */
+#heading h1,
+#heading2 h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-family: 'MyFont3';
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+  /* Typography inside each reason card */
+  #reasons h1 {
+    font-size: 1.3rem !important;
+    margin-left: 10px !important;
+    margin-top: 10px;
+  }
+
+  #reasons h2 {
+    font-size: 1.2rem !important;
+    margin-left: 10px !important;
+    margin-top: -10px !important;  /* Reduced for mobile */
+  }
+
+  #reasons h3 {
+    font-size: 0.9rem !important;
+    margin-left: 10px !important;
+    line-height: 1.4;
+  }
+
+  /* Slide animation changes — shorter movement for small screens */
+  #reasons > div:hover h1,
+  #reasons > div:hover h2 {
+    transform: translateX(180px) 
+  }
+
+  #reasons > div:hover h3 {
+    margin-left: 20px !important;
+  }
+
+ 
+  #events1{
+    font-size: 1.5rem;
+    transform: translate(-100px,0px);
+  }
+}
